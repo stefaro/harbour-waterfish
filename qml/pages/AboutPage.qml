@@ -33,7 +33,7 @@ Page {
                    width: parent.width
                    wrapMode: Text.Wrap
                    text: qsTr("<p>" + "WaterFish" + " " +
-                              "Simple app to keep track of your hydration level. Distributed under simplified BSD license." +
+                              "Simple app to keep track of your hydration level. Distributed under simplified BSD license. Sources can be found from github..." +
                               "</p><br/><p>" + "(c) 2015 Stefan Roos" +
                               "</p>")
                }
@@ -46,7 +46,8 @@ Page {
                    width: parent.width
                    readOnly: true
                    font.underline: true
-                   wrapMode: Text.NoWrap
+                   font.pixelSize: Theme.fontSizeSmall
+                   wrapMode: Text.WordWrap
                    text: "https://github.com/stefaro/harbour-waterfish"
                }
            }
