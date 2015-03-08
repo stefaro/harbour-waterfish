@@ -42,12 +42,12 @@ Page {
                width: parent.width - 2*Theme.paddingMedium
                TextArea {
                    color: Theme.highlightColor
-                   onClicked: Qt.openUrlExternally("http://google.com");
+                   onClicked: Qt.openUrlExternally("https://github.com/stefaro/harbour-waterfish");
                    width: parent.width
                    readOnly: true
                    font.underline: true
                    wrapMode: Text.NoWrap
-                   text: "http://google.com"
+                   text: "https://github.com/stefaro/harbour-waterfish"
                }
            }
        }
