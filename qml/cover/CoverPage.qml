@@ -4,6 +4,29 @@ import harbour.waterfish.settings 1.0
 
 CoverBackground {
     id: coverBackground
+
+    property var applicationActive: appWindow.applicationActive && (status == PageStatus.Active || status == PageStatus.Activating)
+
+    function refresh() {
+        var oldDate = settings.value("date.start",Date.now());
+        var oneDay = 24*60*60*1000
+        if (oldDate - Date.now() >= oneDay){
+            console.log("Next day, reset values!");
+            settings.value("date.start",Date.now());
+            settings.setValue("amount.today",0);
+        }else console.log("continuing same day");
+
+        progressBar.value = settings.value("amount.today",0);
+        progressBar.maximumValue = settings.value("amount.per.day",20)
+        progressBar.minimumValue = 0;
+        progressBar.update();
+    }
+
+    onApplicationActiveChanged: {
+        console.log("coverpage status changed")
+        refresh();
+    }
+
     Label {
         id: label
         style: Text.Sunken
@@ -56,8 +79,8 @@ CoverBackground {
                 progressBar.value = newVal;
                 progressBar.update();
                 infoLabel.text = "" + settings.value("amount.today",0) / 10.0
-                      + " / "
-                      + settings.value("amount.per.day",20) / 10;
+                        + " / "
+                        + settings.value("amount.per.day",20) / 10;
                 infoLabel.update();
 
             }
