@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>harbour-waterfish.png</file>
+    </qresource>
+</RCC>
