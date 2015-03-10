@@ -33,6 +33,10 @@
         <source>Hello, sailors! Time to drink some water!</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Reset hydration level</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SecondPage</name>

@@ -45,6 +45,13 @@ Page {
                 text: qsTr("About")
                 onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
             }
+            MenuItem {
+                text: qsTr("Reset hydration level")
+                onClicked: {
+                    settings.setValue("amount.today",0);
+                    refresh();
+                }
+            }
         }
 
         contentHeight: column.height

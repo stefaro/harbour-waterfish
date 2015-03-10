@@ -3,7 +3,7 @@ Type=Application
 X-Nemo-Application-Type=silica-qt5
 Icon=harbour-waterfish
 Exec=harbour-waterfish
-Name=harbour-waterfish
+Name=waterfish
 # translation example:
 # your app name in German locale (de)
 Name[de]=harbour-waterfish
