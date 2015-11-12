@@ -15,28 +15,12 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <source>My Cover</source>
-        <translation type="vanished">Mein Cover</translation>
-    </message>
-    <message>
         <source>WaterFish</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FirstPage</name>
-    <message>
-        <source>Show Page 2</source>
-        <translation type="vanished">Zur Seite 2</translation>
-    </message>
-    <message>
-        <source>UI Template</source>
-        <translation type="vanished">UI-Vorlage</translation>
-    </message>
-    <message>
-        <source>Hello Sailors</source>
-        <translation type="vanished">Hallo Matrosen</translation>
-    </message>
     <message>
         <source>About</source>
         <translation type="unfinished"></translation>
@@ -46,11 +30,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Hello, sailors! Time to drink some water!</source>
+        <source>Reset hydration level</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Reset hydration level</source>
+        <source>Time to drink some water!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source> times a day to reach currently set hydration level</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

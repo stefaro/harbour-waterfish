@@ -30,11 +30,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Hello, sailors! Time to drink some water!</source>
+        <source>Reset hydration level</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Reset hydration level</source>
+        <source>Time to drink some water!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source> times a day to reach currently set hydration level</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 3.5.0, 2015-11-12T12:46:12. -->
+<!-- Written by QtCreator 3.1.2, 2015-11-12T11:35:42. -->
 <qtcreator>
  <data>
-  <variable>EnvironmentId</variable>
-  <value type="QByteArray">{b555a53a-756a-41b9-89be-9d8e2180b45d}</value>
- </data>
- <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
-  <value type="int">0</value>
+  <value type="int">1</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.EditorSettings</variable>
@@ -60,9 +56,9 @@
   <valuemap type="QVariantMap">
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">MerSDK-SailfishOS-armv7hl</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">MerSDK-SailfishOS-armv7hl</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{251eb243-dd1f-4eda-b418-e616eb2785ad}</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{47584fbc-081a-42b3-a8b3-c9e66117b723}</value>
    <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
-   <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">2</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:/Users/Stefan/build-harbour-waterfish-MerSDK_SailfishOS_armv7hl-Debug</value>
@@ -78,12 +74,10 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">qmake</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QtProjectManager.QMakeBuildStep</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibrary">true</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibraryAuto">false</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibrary">false</value>
+      <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibraryAuto">true</value>
       <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
       <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.SeparateDebugInfo">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.UseQtQuickCompiler">false</value>
      </valuemap>
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -155,8 +149,6 @@
       <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibraryAuto">true</value>
       <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
       <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.SeparateDebugInfo">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.UseQtQuickCompiler">false</value>
      </valuemap>
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -322,11 +314,11 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">1</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">harbour-waterfish (on Mer Device)</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">harbour-waterfish (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.MerRunConfiguration:harbour-waterfish</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.MerRunConfiguration:C:/Users/Stefan/harbour-waterfish/harbour-waterfish.pro</value>
     <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"/>
-    <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.TargetName">harbour-waterfish</value>
+    <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">harbour-waterfish.pro</value>
     <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
     <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>
     <value type="QString" key="RemoteLinux.RunConfig.WorkingDirectory"></value>
@@ -345,9 +337,9 @@
   <valuemap type="QVariantMap">
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">MerSDK-SailfishOS-i486</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">MerSDK-SailfishOS-i486</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{f9dd4477-9ba5-44b2-928a-741bb627f6ba}</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{7c41e24b-d64e-4e8f-ae22-4f03ad6aad83}</value>
    <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
-   <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">2</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:/Users/Stefan/build-harbour-waterfish-MerSDK_SailfishOS_i486-Debug</value>
@@ -367,8 +359,6 @@
       <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibraryAuto">true</value>
       <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
       <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.SeparateDebugInfo">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.UseQtQuickCompiler">false</value>
      </valuemap>
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -440,8 +430,6 @@
       <value type="bool" key="QtProjectManager.QMakeBuildStep.LinkQmlDebuggingLibraryAuto">true</value>
       <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
       <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.SeparateDebugInfo">false</value>
-      <value type="bool" key="QtProjectManager.QMakeBuildStep.UseQtQuickCompiler">false</value>
      </valuemap>
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -605,14 +593,16 @@
      <value type="int">13</value>
      <value type="int">14</value>
     </valuelist>
-    <value type="int" key="PE.EnvironmentAspect.Base">-1</value>
+    <value type="int" key="PE.EnvironmentAspect.Base">1</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Arguments"></value>
-    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable"></value>
-    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.WorkingDirectory">%{buildDir}</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Custom Executable</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">harbour-waterfish (on Remote Device)</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.CustomExecutableRunConfiguration</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">QmakeProjectManager.MerRunConfiguration:C:/Users/Stefan/harbour-waterfish/harbour-waterfish.pro</value>
+    <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.Arguments"/>
+    <value type="QString" key="Qt4ProjectManager.MaemoRunConfiguration.ProFile">harbour-waterfish.pro</value>
+    <value type="QString" key="RemoteLinux.RunConfig.AlternateRemoteExecutable"></value>
+    <value type="bool" key="RemoteLinux.RunConfig.UseAlternateRemoteExecutable">false</value>
+    <value type="QString" key="RemoteLinux.RunConfig.WorkingDirectory"></value>
     <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -628,11 +618,11 @@
   <value type="int">2</value>
  </data>
  <data>
-  <variable>ProjectExplorer.Project.Updater.FileVersion</variable>
-  <value type="int">18</value>
+  <variable>ProjectExplorer.Project.Updater.EnvironmentId</variable>
+  <value type="QByteArray">{720066a0-0a0a-4d18-9694-6fc30d8c0811}</value>
  </data>
  <data>
-  <variable>Version</variable>
-  <value type="int">18</value>
+  <variable>ProjectExplorer.Project.Updater.FileVersion</variable>
+  <value type="int">15</value>
  </data>
 </qtcreator>
