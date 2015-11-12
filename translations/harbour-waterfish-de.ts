@@ -8,7 +8,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&lt;p&gt;WaterFish Simple app to keep track of your hydration level. Distributed under simplified BSD license. Sources can be found from github...&lt;/p&gt;&lt;br/&gt;&lt;p&gt;(c) 2015 Stefan Roos&lt;/p&gt;</source>
+        <source>&lt;p&gt;Simple app to keep track of your hydration level. Distributed under simplified BSD license. Sources can be found from github...&lt;/p&gt;&lt;br/&gt;&lt;p&gt;(c) 2015 Stefan Roos&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

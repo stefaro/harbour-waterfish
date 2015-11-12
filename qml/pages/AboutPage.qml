@@ -24,7 +24,6 @@ Page {
                    source: "qrc:/images/harbour-waterfish.png"
                }
            }
-
            Row {
                width: parent.width - 2*Theme.paddingLarge
                x: Theme.paddingLarge
@@ -32,7 +31,18 @@ Page {
                    color: Theme.primaryColor
                    width: parent.width
                    wrapMode: Text.Wrap
-                   text: qsTr("<p>" + "WaterFish" + " " +
+                   text: "WaterFish v" + appVersion + ""
+               }
+           }
+           Row {
+               width: parent.width - 2*Theme.paddingLarge
+               x: Theme.paddingLarge
+
+               Text {
+                   color: Theme.primaryColor
+                   width: parent.width
+                   wrapMode: Text.Wrap
+                   text: qsTr("<p>"+
                               "Simple app to keep track of your hydration level. Distributed under simplified BSD license. Sources can be found from github..." +
                               "</p><br/><p>" + "(c) 2015 Stefan Roos" +
                               "</p>")
