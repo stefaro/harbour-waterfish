@@ -21,7 +21,7 @@ Page {
                    id: about_img
                    width: Math.min(about.width/2, about.height/2)
                    height: width
-                   source: "qrc:/images/harbour-waterfish.png"
+                   source: "qrc:/images/icons/256x256/harbour-waterfish.png"
                }
            }
            Row {

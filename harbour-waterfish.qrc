@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/images">
-        <file>harbour-waterfish.png</file>
+        <file>icons/86x86/harbour-waterfish.png</file>
+        <file>icons/128x128/harbour-waterfish.png</file>
+        <file>icons/108x108/harbour-waterfish.png</file>
+        <file>icons/256x256/harbour-waterfish.png</file>
     </qresource>
 </RCC>
