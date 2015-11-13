@@ -15,6 +15,14 @@ CoverBackground {
         progressBar.value = today
         progressBar.maximumValue = perDay
         progressBar.update();
+
+        lvlLabel.text = settings.hydrationLevel +" %";
+    }
+
+    Connections {
+        target: settings
+        onAmountTodayChanged: refresh()
+        onAmountPerDayChanged: refresh()
     }
 
     onApplicationActiveChanged: {refresh(); }
