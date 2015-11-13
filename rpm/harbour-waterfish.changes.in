@@ -8,8 +8,14 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Sun Apr 13 2014 Jack Tar <jack.tar@example.com> 0.0.1-1
-- Scrubbed the deck
-- Hoisted the sails
+* Fri Nov 13 2015 Stefan Roos 1.1-1
+- Multiple minor changes
+- Fixed CoverPage QML
+- fixed FirstPage QML
+- added hydrationLevel property to settings class
+- changed logo
+- fixed file permissions when installing
 
-
+* Thu Nov 12 2015 Stefan Roos 1.1-1
+- clean up and refactoring
+- implemented properties to settings class
