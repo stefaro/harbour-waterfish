@@ -13,6 +13,11 @@ Settings::Settings(QObject *parent)
 {
 }
 
+int Settings::hydrationLevel()
+{
+    return double(amountToday())/double(amountPerDay())*100.0;
+}
+
 int Settings::amountToday()
 {
     // If day has changed, reset amount today value.
@@ -20,29 +25,10 @@ int Settings::amountToday()
     today = QDate::currentDate();
     if (startDate() != today)
     {
+        qDebug() << "day has changed, resetting values";
         setStartDate(today);
         setAmountToday(0);
         return 0;
     }
     return m_settings->value(SETTING_AMOUNT_TODAY,0).toInt();
 }
-
-int Settings::valueInt(const QString &key, const int defaultValue) const
-{
-    return value(key,defaultValue).toInt();
-}
-
-void Settings::setValue(const QString &key, const QVariant &value)
-{
-    qDebug() << "Setting value: " << value << " with key: " << key;
-    m_settings->setValue(key,value);
-    m_settings->sync();
-}
-
-QVariant Settings::value(const QString &key, const QVariant &defaultValue) const
-{
-    qDebug() << "getting value with key" << key;
-    return m_settings->value(key,defaultValue);
-}
-
-

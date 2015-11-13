@@ -13,11 +13,13 @@ class Settings : public QObject
     Q_PROPERTY(int amountToday READ amountToday WRITE setAmountToday NOTIFY amountTodayChanged)
     Q_PROPERTY(int amountPerDay READ amountPerDay WRITE setAmountPerDay NOTIFY amountPerDayChanged)
     Q_PROPERTY(int amount READ amount WRITE setAmount NOTIFY amountChanged)
+    Q_PROPERTY(int hydrationLevel READ hydrationLevel)
 public:
     QDate startDate() const {return m_settings->value(SETTING_DATE_STARTED,QDate::currentDate()).toDate();}
     int amountToday();
     int amountPerDay() const {return m_settings->value(SETTING_AMOUNT_PER_DAY,20).toInt();}
     int amount() const {return m_settings->value(SETTING_AMOUNT,0).toInt();}
+    int hydrationLevel();
 
     explicit Settings(QObject *parent = 0);
 
@@ -26,11 +28,6 @@ public slots:
     void setAmountPerDay(int value){m_settings->setValue(SETTING_AMOUNT_PER_DAY,value);m_settings->sync();emit amountPerDayChanged();}
     void setAmountToday(int value){m_settings->setValue(SETTING_AMOUNT_TODAY,value);m_settings->sync();emit amountTodayChanged();}
     void setStartDate(const QDate & date){m_settings->setValue(SETTING_DATE_STARTED,date);m_settings->sync();emit startDateChanged();}
-
-
-    void setValue(const QString & key, const QVariant & value);
-    QVariant value(const QString &key, const QVariant &defaultValue = QVariant()) const;
-    int valueInt(const QString &key, const int defaultValue) const;
 
 signals:
     void startDateChanged();
