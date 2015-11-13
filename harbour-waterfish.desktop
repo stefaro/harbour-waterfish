@@ -3,4 +3,4 @@ Type=Application
 X-Nemo-Application-Type=silica-qt5
 Icon=harbour-waterfish
 Exec=harbour-waterfish
-Name=waterfish
+Name=WaterFish
