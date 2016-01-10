@@ -9,7 +9,7 @@ const QString Settings::SETTING_DATE_STARTED = "date.start";
 
 Settings::Settings(QObject *parent)
     : QObject(parent)
-    , m_settings(new QSettings(QSettings::UserScope,"com.sro.waterfish","harbour-waterfish",this))
+    , m_settings(new QSettings(QSettings::UserScope,"harbour-waterfish","harbour-waterfish",this))
 {
 }
 
