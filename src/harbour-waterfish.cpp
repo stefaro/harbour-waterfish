@@ -2,8 +2,10 @@
 #include <sailfishapp.h>
 #include <QQuickView>
 #include <QQmlEngine>
+#include <nemonotifications-qt5/notification.h>
 
 #include "settings.h"
+
 
 int main(int argc, char *argv[])
 {

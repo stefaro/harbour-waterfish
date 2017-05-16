@@ -1,4 +1,5 @@
 TARGET = harbour-waterfish
+QT += dbus
 CONFIG += sailfishapp
 SOURCES += src/harbour-waterfish.cpp \
     src/settings.cpp
