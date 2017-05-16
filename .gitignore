@@ -2,3 +2,4 @@ harbour-waterfish.pro.user.*
 harbour-waterfish.pro.user
 rpm/harbour-waterfish.spec.*
 rpm/harbour-waterfish.spec
+*.user.*
