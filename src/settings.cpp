@@ -5,6 +5,8 @@ const QString Settings::SETTING_AMOUNT = "amount";
 const QString Settings::SETTING_AMOUNT_TODAY = "amount.today";
 const QString Settings::SETTING_AMOUNT_PER_DAY  = "amount.per.day";
 const QString Settings::SETTING_DATE_STARTED = "date.start";
+const QString Settings::SETTING_NOTIFICATIONS_ENABLED = "notifications.enabled";
+const QString Settings::SETTING_NOTIFICATIONS_INTERVAL = "notifications.interval";
 
 
 Settings::Settings(QObject *parent)
