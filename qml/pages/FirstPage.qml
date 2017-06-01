@@ -6,7 +6,7 @@ Page {
     id: firstPage
     allowedOrientations: Orientation.All
     property var applicationActive: appWindow.applicationActive && (status == PageStatus.Active || status == PageStatus.Activating)
-
+    property double drinkCount: 20.0
     function refresh() {
         console.log("Refreshing view")
         var today = settings.amountToday;
@@ -20,6 +20,8 @@ Page {
         if (detailToDrink.value < 0 )detailToDrink.value = 0;
         detailToDrink.update();
         detailDrank.value = today;
+
+        drinkCount = perDay/settings.amount;
     }
     onApplicationActiveChanged: {refresh();}
 
@@ -99,7 +101,7 @@ Page {
                 id: infoLabel
                 x: Theme.paddingLarge
                 text: qsTr("You need to drink selected amount "
-                           + (settings.amountPerDay/((settings.amount))).toFixed(1)
+                           + drinkCount.toPrecision(2)
                            +  qsTr(" times a day to reach currently set hydration level"))
                 wrapMode: Text.WordWrap
                 width: parent.width - Theme.paddingLarge
