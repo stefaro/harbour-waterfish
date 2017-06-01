@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import harbour.waterfish.settings 1.0
+import org.nemomobile.notifications 1.0
 
 CoverBackground {
     id: coverBackground
@@ -17,6 +18,26 @@ CoverBackground {
         progressBar.update();
 
         lvlLabel.text = settings.hydrationLevel +" %";
+    }
+
+    Notification {
+        id: notification
+        category: "x-nemo.example"
+        summary: "Remember to drink!"
+        body: "It's been x since you last hydrated yourself."
+    }
+
+    Timer{
+        id: drinkingTimer
+        interval: 10000
+        running: true
+        repeat: true
+
+
+        onTriggered: {
+            console.log("Drinkin timer triggered");
+            notification.publish();
+        }
     }
 
     Connections {

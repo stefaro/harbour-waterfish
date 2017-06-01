@@ -18,13 +18,13 @@ public:
     QDate startDate() const {return m_settings->value(SETTING_DATE_STARTED,QDate::currentDate()).toDate();}
     int amountToday();
     int amountPerDay() const {return m_settings->value(SETTING_AMOUNT_PER_DAY,20).toInt();}
-    int amount() const {return m_settings->value(SETTING_AMOUNT,0).toInt();}
+    int amount() const;
     int hydrationLevel();
 
     explicit Settings(QObject *parent = 0);
 
 public slots:
-    void setAmount(int value){m_settings->setValue(SETTING_AMOUNT,value);m_settings->sync();emit amountChanged();}
+    void setAmount(int value);
     void setAmountPerDay(int value){m_settings->setValue(SETTING_AMOUNT_PER_DAY,value);m_settings->sync();emit amountPerDayChanged();}
     void setAmountToday(int value){m_settings->setValue(SETTING_AMOUNT_TODAY,value);m_settings->sync();emit amountTodayChanged();}
     void setStartDate(const QDate & date){m_settings->setValue(SETTING_DATE_STARTED,date);m_settings->sync();emit startDateChanged();}

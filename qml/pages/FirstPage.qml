@@ -3,7 +3,7 @@ import Sailfish.Silica 1.0
 import harbour.waterfish.settings 1.0
 
 Page {
-    id: page
+    id: firstPage
     allowedOrientations: Orientation.All
     property var applicationActive: appWindow.applicationActive && (status == PageStatus.Active || status == PageStatus.Activating)
 
@@ -25,6 +25,15 @@ Page {
 
     Settings{
         id: settings
+        onAmountChanged:  {
+            console.log("Amount changed")  ;
+            refresh();
+        }
+        onAmountPerDayChanged:{
+            refresh();
+            console.log("Amount per day changed")
+        }
+
     }
 
     SilicaFlickable {
@@ -34,6 +43,10 @@ Page {
             MenuItem {
                 text: qsTr("About")
                 onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
+            }
+            MenuItem {
+                text: qsTr("Settings")
+                onClicked: pageStack.push(Qt.resolvedUrl("SettingsPage.qml"))
             }
             MenuItem {
                 text: qsTr("Reset hydration level")
@@ -47,7 +60,7 @@ Page {
         contentHeight: column.height
         Column {
             id: column
-            width: page.width
+            width: firstPage.width
             spacing: Theme.paddingLarge
             PageHeader {
                 title: qsTr("WaterFish")
@@ -73,7 +86,6 @@ Page {
                 value: settings.amountToday
             }
 
-
             ProgressBar {
                 id:progressBar
                 x:Theme.paddingSmall
@@ -83,47 +95,11 @@ Page {
                 value: settings.amountToday
             }
 
-            ComboBox {
-                id: cbAmountPerDay
-                label: "Amount to drink daily"
-                menu: ContextMenu {
-                    id: amountMenuDay
-                    property var dlValues: [20,25,30,35,40];
-                    MenuItem { text: "" + amountMenuDay.dlValues[0]/10 + " l" }
-                    MenuItem { text: "" + amountMenuDay.dlValues[1]/10 + " l" }
-                    MenuItem { text: "" + amountMenuDay.dlValues[2]/10 + " l" }
-                    MenuItem { text: "" + amountMenuDay.dlValues[3]/10 + " l" }
-                    MenuItem { text: "" + amountMenuDay.dlValues[4]/10 + " l" }
-                }
-                onValueChanged: {
-                    settings.setAmountPerDay(amountMenuDay.dlValues[cbAmountPerDay.currentIndex])
-                    refresh();
-                }
-            }
-
-            ComboBox {
-                id: cbAmount
-                label: "Amount to drink"
-                menu: ContextMenu {
-                    id: amountMenu
-                    property var dlValues: [1,2,3,4,5];
-                    MenuItem { text: "" + amountMenu.dlValues[0] + "dl" }
-                    MenuItem { text: "" + amountMenu.dlValues[1] + "dl" }
-                    MenuItem { text: "" + amountMenu.dlValues[2] + "dl" }
-                    MenuItem { text: "" + amountMenu.dlValues[3] + "dl" }
-                    MenuItem { text: "" + amountMenu.dlValues[4] + "dl" }
-                }
-                onValueChanged: {
-                    settings.setAmount( amountMenu.dlValues[cbAmount.currentIndex])
-                    refresh();
-                }
-            }
-
             Label{
                 id: infoLabel
                 x: Theme.paddingLarge
                 text: qsTr("You need to drink selected amount "
-                           + (settings.amountPerDay/((cbAmount.currentIndex+1))).toFixed(1)
+                           + (settings.amountPerDay/((settings.amount))).toFixed(1)
                            +  qsTr(" times a day to reach currently set hydration level"))
                 wrapMode: Text.WordWrap
                 width: parent.width - Theme.paddingLarge

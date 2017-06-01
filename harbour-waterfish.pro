@@ -24,3 +24,6 @@ HEADERS += \
 
 RESOURCES += \
     harbour-waterfish.qrc
+
+DISTFILES += \
+    qml/pages/SettingsPage.qml

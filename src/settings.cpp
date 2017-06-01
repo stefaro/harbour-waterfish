@@ -32,3 +32,18 @@ int Settings::amountToday()
     }
     return m_settings->value(SETTING_AMOUNT_TODAY,0).toInt();
 }
+
+
+void Settings::setAmount(int value)
+{
+    qDebug() << "Changing amount value to" << value;
+    m_settings->setValue(SETTING_AMOUNT,value);
+    m_settings->sync();
+    emit amountChanged();
+}
+int Settings::amount() const
+{
+    int val = m_settings->value(SETTING_AMOUNT,1).toInt();
+    qDebug() << "Getting amount value "<< val;
+    return val;
+}
