@@ -26,6 +26,8 @@ Dialog {
             console.log("Time to load settings");
             cbAmountPerDay.currentIndex = dlToIndex(settings.amountPerDay)
             cbAmount.currentIndex = settings.amount-1;
+            cbNotificationInterval.currentIndex = settings.notificationInterval-1;
+            notificationsOn.checked = settings.notificationsEnabled;
             previousLoaded = true;
         }
     }
@@ -33,7 +35,8 @@ Dialog {
     onAccepted: {
         settings.setAmount(cbAmount.dlValue);
         settings.setAmountPerDay(cbAmountPerDay.dlValue);
-
+        settings.setNotificationInterval(cbNotificationInterval.nInterval);
+        settings.setNotificationsEnabled(notificationsOn.checked);
         previousLoaded = false;
     }
 
