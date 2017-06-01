@@ -5,6 +5,7 @@
 #include <QVariant>
 #include <QSettings>
 #include <QDate>
+#include <QDateTime>
 
 class Settings : public QObject
 {
@@ -16,6 +17,9 @@ class Settings : public QObject
     Q_PROPERTY(int hydrationLevel READ hydrationLevel)
     Q_PROPERTY(bool notificationsEnabled READ notificationsEnabled WRITE setNotificationsEnabled NOTIFY notificationsEnabledChanged)
     Q_PROPERTY(int notificationInterval READ notificationInterval WRITE setNotificationInterval NOTIFY notificationIntervalChanged)
+    Q_PROPERTY(QDateTime lastDrinkTime READ lastDrinkTime WRITE setLastDrinkTime NOTIFY lastDrinkTimeChanged)
+    Q_PROPERTY(bool shouldDrink READ shouldDrink)
+
 public:
     QDate startDate() const {return m_settings->value(SETTING_DATE_STARTED,QDate::currentDate()).toDate();}
     int amountToday();
@@ -24,16 +28,19 @@ public:
     int hydrationLevel();
     bool notificationsEnabled() const {return m_settings->value(SETTING_NOTIFICATIONS_ENABLED,true).toBool();}
     int notificationInterval() const {return m_settings->value(SETTING_NOTIFICATIONS_INTERVAL,1).toInt();}
+    QDateTime lastDrinkTime() const {return m_settings->value(SETTING_TIME_LAST_DRINK,QDateTime::currentDateTime()).toDateTime();}
+    bool shouldDrink();
 
     explicit Settings(QObject *parent = 0);
 
 public slots:
     void setAmount(int value);
     void setAmountPerDay(int value){m_settings->setValue(SETTING_AMOUNT_PER_DAY,value);m_settings->sync();emit amountPerDayChanged();}
-    void setAmountToday(int value){m_settings->setValue(SETTING_AMOUNT_TODAY,value);m_settings->sync();emit amountTodayChanged();}
+    void setAmountToday(int value);
     void setStartDate(const QDate & date){m_settings->setValue(SETTING_DATE_STARTED,date);m_settings->sync();emit startDateChanged();}
     void setNotificationsEnabled(bool value){m_settings->setValue(SETTING_NOTIFICATIONS_ENABLED,value);m_settings->sync();emit notificationsEnabledChanged();}
     void setNotificationInterval(int value){m_settings->setValue(SETTING_NOTIFICATIONS_INTERVAL,value);m_settings->sync();emit notificationIntervalChanged();}
+    void setLastDrinkTime(const QDateTime & date){m_settings->setValue(SETTING_TIME_LAST_DRINK,date);m_settings->sync();emit lastDrinkTimeChanged();}
 
 signals:
     void startDateChanged();
@@ -42,6 +49,7 @@ signals:
     void amountChanged();
     void notificationsEnabledChanged();
     void notificationIntervalChanged();
+    void lastDrinkTimeChanged();
 
 private:
     QSettings *m_settings;
@@ -52,6 +60,7 @@ private:
     static const QString SETTING_DATE_STARTED;
     static const QString SETTING_NOTIFICATIONS_ENABLED;
     static const QString SETTING_NOTIFICATIONS_INTERVAL;
+    static const QString SETTING_TIME_LAST_DRINK;
 };
 
 #endif // SETTINGS_H

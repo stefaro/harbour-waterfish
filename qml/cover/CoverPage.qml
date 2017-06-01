@@ -7,6 +7,7 @@ CoverBackground {
     id: coverBackground
 
     property var applicationActive: appWindow.applicationActive && (status == PageStatus.Active || status == PageStatus.Activating)
+    property bool notified: false
 
     function refresh() {
         console.log("Refreshing cover view")
@@ -29,14 +30,17 @@ CoverBackground {
 
     Timer{
         id: drinkingTimer
-        interval: 10000
+        //interval: 1*60*1000 // 1 minute
+        interval: 1000
         running: true
         repeat: true
 
-
         onTriggered: {
             console.log("Drinkin timer triggered");
-            notification.publish();
+            if (settings.shouldDrink && notified == false){
+                notified = true
+                notification.publish();
+            }
         }
     }
 
@@ -97,7 +101,7 @@ CoverBackground {
                 progressBar.update();
                 lvlLabel.text = settings.hydrationLevel +" %";
                 infoLabel.update();
-
+                notified = false;
             }
         }
     }
