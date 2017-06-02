@@ -136,6 +136,9 @@ Dialog {
 
                 text: qsTr("Notifications enabled")
                 description: qsTr("Notify when too much time has passed since last drink event.")
+                onCheckedChanged: {
+                    cbNotificationInterval.enabled = notificationsOn.checked
+                }
             }
             ComboBox {
                 id: cbNotificationInterval
@@ -163,6 +166,7 @@ Dialog {
                         property int nInterval: 5
                     }
                 }
+                enabled: notificationsOn.checked
             }
 
         }
