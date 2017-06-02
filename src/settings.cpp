@@ -59,7 +59,6 @@ int Settings::amount() const
 
 bool Settings::shouldDrink()
 {
-    bool drink = false;
     checkIfDayChanged();
 
     if (notificationsEnabled()){
@@ -71,11 +70,12 @@ bool Settings::shouldDrink()
 
         long requiredSeconds = notificationInterval()*60*60;
         if (seconds >= requiredSeconds){
-            drink = true;
+            qDebug() << "user should be notified";
+            return true;
         }
+        qDebug() << "No need to notify user now.";
     }
-
-    return drink;
+    return false;
 }
 
 void Settings::setAmountToday(int value)

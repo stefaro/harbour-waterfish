@@ -25,13 +25,13 @@ CoverBackground {
         id: notification
         category: "x-nemo.example"
         summary: "Remember to drink!"
-        body: "It's been x since you last hydrated yourself."
+        body: "It's been too long since you last rehydrated yourself."
     }
 
     Timer{
         id: drinkingTimer
-        //interval: 1*60*1000 // 1 minute
-        interval: 1000
+        // 2 minute interval for checking if user should be notified.
+        interval: 2*60*1000
         running: true
         repeat: true
 
@@ -40,6 +40,7 @@ CoverBackground {
             if (settings.shouldDrink && notified == false){
                 notified = true
                 notification.publish();
+                console.log("Notified user")
             }
         }
     }
