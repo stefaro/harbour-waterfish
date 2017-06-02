@@ -24,9 +24,6 @@ void Settings::checkIfDayChanged()
 {
     QDate today = QDate::currentDate();
     QDate start = startDate();
-    qDebug() << "comparing start date ("
-             << start <<") to current date (" << today << ")";
-
     if (start != today)
     {
         qDebug() << "day has changed, resetting values";
@@ -45,7 +42,6 @@ int Settings::amountToday()
 
 void Settings::setAmount(int value)
 {
-    qDebug() << "Changing amount value to" << value;
     m_settings->setValue(SETTING_AMOUNT,value);
     m_settings->sync();
     emit amountChanged();
@@ -53,7 +49,6 @@ void Settings::setAmount(int value)
 int Settings::amount() const
 {
     int val = m_settings->value(SETTING_AMOUNT,1).toInt();
-    qDebug() << "Getting amount value "<< val;
     return val;
 }
 
