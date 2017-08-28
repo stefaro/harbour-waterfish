@@ -13,8 +13,8 @@ Name:       harbour-waterfish
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    My SailfishOS Application
-Version:    1.2
-Release:    3
+Version:    1.3
+Release:    1
 Group:      Qt/Qt
 License:    LICENSE
 URL:        http://example.org/

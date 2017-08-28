@@ -12,8 +12,8 @@ int main(int argc, char *argv[])
 {
     QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
     QScopedPointer<QQuickView> view(SailfishApp::createView());
-    view->rootContext()->setContextProperty("appVersion", 1.2);
-    view->rootContext()->setContextProperty("appBuildNum", 20);
+    view->rootContext()->setContextProperty("appVersion", 1.3);
+    view->rootContext()->setContextProperty("appBuildNum", 30);
     qmlRegisterType<Settings>("harbour.waterfish.settings", 1, 0, "Settings");
     qmlRegisterType<Database>("harbour.waterfish.database", 1, 0, "Database");
     view->setSource(SailfishApp::pathTo("qml/harbour-waterfish.qml"));
