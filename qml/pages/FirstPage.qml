@@ -51,6 +51,10 @@ Page {
                 onClicked: pageStack.push(Qt.resolvedUrl("SettingsPage.qml"))
             }
             MenuItem {
+                text: qsTr("Statistics")
+                onClicked: pageStack.push(Qt.resolvedUrl("StatisticsPage.qml"))
+            }
+            MenuItem {
                 text: qsTr("Reset hydration level")
                 onClicked: {
                     settings.setAmountToday(0);

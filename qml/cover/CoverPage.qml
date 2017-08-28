@@ -2,6 +2,7 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import harbour.waterfish.settings 1.0
 import org.nemomobile.notifications 1.0
+import harbour.waterfish.database 1.0
 
 CoverBackground {
     id: coverBackground
@@ -101,10 +102,15 @@ CoverBackground {
                 progressBar.value = newVal;
                 progressBar.update();
                 lvlLabel.text = settings.hydrationLevel +" %";
+                database.saveStatistics(newVal,settings.amountPerDay);
                 infoLabel.update();
                 notified = false;
             }
         }
+    }
+
+    Database{
+        id: database
     }
 }
 
