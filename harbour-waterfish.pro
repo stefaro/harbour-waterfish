@@ -17,8 +17,10 @@ OTHER_FILES += qml/harbour-waterfish.qml \
     qml/pages/AboutPage.qml \
     qml/components\LinePlot.qml
 
-#CONFIG += sailfishapp_i18n
-#TRANSLATIONS += translations/harbour-waterfish-de.ts
+CONFIG += sailfishapp_i18n
+TRANSLATIONS += translations/harbour-waterfish-de.ts
+TRANSLATIONS += translations/harbour-waterfish-fr.ts
+TRANSLATIONS += translations/harbour-waterfish-fi.ts
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
 

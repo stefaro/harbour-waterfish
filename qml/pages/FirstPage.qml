@@ -8,7 +8,6 @@ Page {
     property var applicationActive: appWindow.applicationActive && (status == PageStatus.Active || status == PageStatus.Activating)
     property double drinkCount: 20.0
     function refresh() {
-        console.log("Refreshing view")
         var today = settings.amountToday;
         var perDay = settings.amountPerDay;
 
@@ -82,13 +81,13 @@ Page {
 
             DetailItem {
                 id: detailToDrink
-                label: "You still need to drink (dl)"
+                label: qsTr("You still need to drink (dl)")
                 value: settings.amountPerDay-settings.amountToday
             }
 
             DetailItem {
                 id: detailDrank
-                label: "You have drank today (dl)"
+                label: qsTr("You have drank today (dl)")
                 value: settings.amountToday
             }
 
@@ -104,9 +103,8 @@ Page {
             Label{
                 id: infoLabel
                 x: Theme.paddingLarge
-                text: qsTr("You need to drink selected amount "
-                           + drinkCount.toPrecision(2)
-                           +  qsTr(" times a day to reach currently set hydration level"))
+                text: qsTr("You need to drink selected amount %1 times a day to reach currently set hydration level")
+                        .arg( drinkCount.toPrecision(2) );
                 wrapMode: Text.WordWrap
                 width: parent.width - Theme.paddingLarge
             }

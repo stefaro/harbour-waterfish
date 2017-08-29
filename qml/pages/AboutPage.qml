@@ -42,10 +42,10 @@ Page {
                    color: Theme.primaryColor
                    width: parent.width
                    wrapMode: Text.Wrap
-                   text: qsTr("<p>"+
-                              "Simple app to keep track of your hydration level. Distributed under simplified BSD license. Sources can be found from github... " +
-                              "If you encounter some issues or find a bug, please report them via github issues.</p><br/><p>" + "(c) 2015-2017 Stefan Roos" +
-                              "</p>")
+                   text: "<p>"+
+                              qsTr("Simple app to keep track of your hydration level. Distributed under simplified BSD license. Sources can be found from github... " +
+                              "If you encounter some issues or find a bug, please report them via github issues.")
+                              +"</p><br/><p>(c) 2015-2017 Stefan Roos</p>";
                }
            }
            Row {

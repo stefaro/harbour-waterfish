@@ -25,8 +25,8 @@ CoverBackground {
     Notification {
         id: notification
         category: "x-nemo.example"
-        summary: "Remember to drink!"
-        body: "It's been too long since you last rehydrated yourself."
+        summary: qsTr("Remember to drink!")
+        body: qsTr("It's been too long since you last rehydrated yourself.")
     }
 
     Timer{

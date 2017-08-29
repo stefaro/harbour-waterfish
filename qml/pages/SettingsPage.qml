@@ -72,7 +72,7 @@ Dialog {
 
             ComboBox {
                 id: cbAmountPerDay
-                label: "Amount to drink daily"
+                label: qsTr("Amount to drink daily")
                 property int dlValue: currentItem.dlValue
                 menu: ContextMenu {
                     MenuItem {
@@ -100,7 +100,7 @@ Dialog {
 
             ComboBox {
                 id: cbAmount
-                label: "Amount to drink"
+                label: qsTr("Amount to drink")
                 property var dlValue: currentItem.dlValue
                 menu: ContextMenu {
                     MenuItem {
@@ -142,7 +142,7 @@ Dialog {
             }
             ComboBox {
                 id: cbNotificationInterval
-                label: "Notify after"
+                label: qsTr("Notify after")
                 property var nInterval: currentItem.nInterval
                 menu: ContextMenu {
                     MenuItem {

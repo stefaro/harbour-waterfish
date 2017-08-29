@@ -11,17 +11,12 @@ Page {
 
    Component.onCompleted: {
        dataList = [[],[]];
-       var statlist = [];
-       var targetlist = [];
        var stat = database.getStatistics();
        stat.forEach(function(entry){
            dataList[0].push({timestamp:entry.time,value:entry.value})
            dataList[1].push({timestamp:entry.time,value:entry.target})
         }
        );
-       console.log("time: " + statlist[0].timestamp);
-       dataList.push(statlist);
-       dataList.push(targetlist);
    }
 
    allowedOrientations: Orientation.Portrait | Orientation.Landscape
