@@ -9,14 +9,14 @@
     </message>
     <message>
         <source>Simple app to keep track of your hydration level. Distributed under simplified BSD license. Sources can be found from github... If you encounter some issues or find a bug, please report them via github issues.</source>
-        <translation>Application simple pour suivre votre niveau d'hydratation. Distribuée sous licence BSD simplifiée. Le code source se trouve sur GitHub...si vous rencontrez un problème ou trouvez un bug, merci de le signaler via GitHub.</translation>
+        <translation>Application simple pour suivre votre niveau d&apos;hydratation. Distribuée sous licence BSD simplifiée. Le code source se trouve sur GitHub...si vous rencontrez un problème ou trouvez un bug, merci de le signaler via GitHub.</translation>
     </message>
 </context>
 <context>
     <name>CoverPage</name>
     <message>
         <source>Hydration level:</source>
-        <translation>Niveau d'hydratation :</translation>
+        <translation>Niveau d&apos;hydratation :</translation>
     </message>
     <message>
         <source>Remember to drink!</source>
@@ -24,7 +24,7 @@
     </message>
     <message>
         <source>It&apos;s been too long since you last rehydrated yourself.</source>
-        <translation>Vous n'avez pas bu depuis trop longtemps.</translation>
+        <translation>Vous n&apos;avez pas bu depuis trop longtemps.</translation>
     </message>
 </context>
 <context>
@@ -63,7 +63,7 @@
     </message>
     <message>
         <source>You need to drink selected amount %1 times a day to reach currently set hydration level</source>
-        <translation>Il vous faut boire le volume choisi %1 fois par jour pour atteindre le niveau d'hydratation</translation>
+        <translation>Il vous faut boire le volume choisi %1 fois par jour pour atteindre le niveau d&apos;hydratation</translation>
     </message>
 </context>
 <context>
@@ -124,7 +124,7 @@
     <name>StatisticsPage</name>
     <message>
         <source>Hydration statistics</source>
-        <translation>Statistiques d'hydratation</translation>
+        <translation>Statistiques d&apos;hydratation</translation>
     </message>
     <message>
         <source>hydration</source>

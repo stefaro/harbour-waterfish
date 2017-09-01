@@ -6,12 +6,12 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="16"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Tietoja</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="46"/>
         <source>Simple app to keep track of your hydration level. Distributed under simplified BSD license. Sources can be found from github... If you encounter some issues or find a bug, please report them via github issues.</source>
-        <translation type="unfinished"></translation>
+        <translation>Yksinkertainen sovellus nesteytyksen seurantaan. Tämä sovellus jaetaan yksinkertaisen BSD-lisenssin ehdoilla. Lähdekoodit ovat saatavilla Githubissa... Jos löydät bugin tai kohtaat jotain ongelmia sovelluksessa, raportoi ne Githubin issueissa.</translation>
     </message>
 </context>
 <context>
@@ -19,17 +19,17 @@
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="28"/>
         <source>Remember to drink!</source>
-        <translation type="unfinished"></translation>
+        <translation>Muista juoda!</translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="29"/>
         <source>It&apos;s been too long since you last rehydrated yourself.</source>
-        <translation type="unfinished"></translation>
+        <translation>Edellisestä veden juonnistas on kulunut liian paljon aikaa.</translation>
     </message>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="74"/>
         <source>Hydration level:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nesteytystaso:</translation>
     </message>
 </context>
 <context>
@@ -37,47 +37,47 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="45"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Tietoja</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="49"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Asetukset</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="53"/>
         <source>Statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>Statistiikka</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="57"/>
         <source>Reset hydration level</source>
-        <translation type="unfinished"></translation>
+        <translation>Nollaa nesteytystaso</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="71"/>
         <source>WaterFish</source>
-        <translation type="unfinished"></translation>
+        <translation>WaterFish</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="75"/>
         <source>Time to drink some water!</source>
-        <translation type="unfinished"></translation>
+        <translation>Aika juoda vettä!</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="84"/>
         <source>You still need to drink (dl)</source>
-        <translation type="unfinished"></translation>
+        <translation>Sinun tulee vielä juoda (dl)</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="90"/>
         <source>You have drank today (dl)</source>
-        <translation type="unfinished"></translation>
+        <translation>Olet juonut tänään (dl)</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="106"/>
         <source>You need to drink selected amount %1 times a day to reach currently set hydration level</source>
-        <translation type="unfinished"></translation>
+        <translation>Sinun pitää juoda valittu määrä %1 kertaa päivässä, jotta saavutat halutun nesteytystason</translation>
     </message>
 </context>
 <context>
@@ -85,12 +85,12 @@
     <message>
         <location filename="../qml/pages/SecondPage.qml" line="42"/>
         <source>Nested Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Sisäkkäinen sivu</translation>
     </message>
     <message>
         <location filename="../qml/pages/SecondPage.qml" line="49"/>
         <source>Item</source>
-        <translation type="unfinished"></translation>
+        <translation>Kohta</translation>
     </message>
 </context>
 <context>
@@ -98,52 +98,52 @@
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="64"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Tallenna</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="65"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Peruuta</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="66"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Asetukset</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="70"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Yleiset</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="75"/>
         <source>Amount to drink daily</source>
-        <translation type="unfinished"></translation>
+        <translation>Päivittäinen tavoite</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="103"/>
         <source>Amount to drink</source>
-        <translation type="unfinished"></translation>
+        <translation>Määrä juontikerralla</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="130"/>
         <source>Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Ilmoitukset</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="137"/>
         <source>Notifications enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Imoitukset aktivoitu</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="138"/>
         <source>Notify when too much time has passed since last drink event.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ilmoita kun on kulunut liian paljon aikaa edellisestä juontikerrasta.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="145"/>
         <source>Notify after</source>
-        <translation type="unfinished"></translation>
+        <translation>Ilmoita (h) jälkeen</translation>
     </message>
 </context>
 <context>
@@ -151,17 +151,17 @@
     <message>
         <location filename="../qml/pages/StatisticsPage.qml" line="32"/>
         <source>Hydration statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>Nesteytysstatistiikka</translation>
     </message>
     <message>
         <location filename="../qml/pages/StatisticsPage.qml" line="58"/>
         <source>hydration</source>
-        <translation type="unfinished"></translation>
+        <translation>nesteytys</translation>
     </message>
     <message>
         <location filename="../qml/pages/StatisticsPage.qml" line="59"/>
         <source>target</source>
-        <translation type="unfinished"></translation>
+        <translation>kohde</translation>
     </message>
 </context>
 </TS>
